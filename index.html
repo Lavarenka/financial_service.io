@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap" rel="stylesheet" />
         <!-- подключение js эфектов -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
@@ -11,11 +12,34 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header"></header>
+            <header class="header">
+                <div class="header__container">
+                    <a href="#" class="header__logo">
+                        <img src="/img/header/LOGO.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu menu-header">
+                        <ul class="menu-header__list">
+                            <li class="menu-header__item">
+                                <a href=""class="menu-header__link_active">Home</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href=""class="menu-header__link">Explore</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header__button _button">Get Started</a>
+                    
+                </div>
+            </header>
             <main class="page">
                 <div class="page__main-block main-block">
+                    <div class="main-block__screen"></div>
                     <div class="main-block__container _container">
-                        
+                        <div class="main-block__body">
+                            <h1 class="main-block__title">Your strategy is only as good as 
+                                you execute it.</h1>
+                            <a href="#" class="main-block__button _button">Get Started</a>
+                        </div>      
                     </div>
                 </div>
             </main>
