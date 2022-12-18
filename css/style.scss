@@ -1,1 +1,34 @@
 @import "nullstyle.scss";
+
+body{
+    height: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+}
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+/*-----------------------*/
+.page {
+}
+
+/*---------------------------*/
+.footer {
+}
+
+

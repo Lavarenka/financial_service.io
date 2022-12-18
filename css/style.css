@@ -74,4 +74,28 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------------------------------*/
 /*------------------------------------------------*/
 /*------------------------------------------------*/
-/*------------------------------------------------*//*# sourceMappingURL=style.css.map */
+/*------------------------------------------------*/
+body {
+  height: 100%;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+
+/*-----------------------*/
+/*---------------------------*//*# sourceMappingURL=style.css.map */
