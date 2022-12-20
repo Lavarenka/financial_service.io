@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap" rel="stylesheet" />
         <!-- подключение js эфектов -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+
         <!-- подключение js эфектов -->
     </head>
     <body>
@@ -37,41 +41,49 @@
                     <div class="main-block__container _container">
                         <div class="main-block__body">
                             <h1 class="main-block__title">Your strategy is only as good as 
-                                you execute it.</h1>
+                                you execute it<span>.</span></h1>
                             <a href="#" class="main-block__button _button">Get Started</a>
                         </div>      
                     </div>
                 </div>
                 <section class="page__profile profile">
                     <div class="profile__container _container">
-                        <div class="profile__header header-block">
-                            <div class="header-block__title">Company Profile.</div>   
-                            <div class="header-block__subtitle">short introduction</div>
-                        </div>
+                     
                         <div class="profile__body">
-                            <div class="profile__slide slide-profile">
-                                <div id="block-for-slider">
-                                    <div id="viewport">
-                                        <ul id="slidewrapper">
-                                            <li class="slide"><img src="https://hsto.org/files/8d4/b19/80d/8d4b1980d48c418090e2c4466d8c06e1.jpg" alt="1" class="slide-img"></li>
-                                            <li class="slide"><img src="https://hsto.org/files/ef1/3d7/97e/ef13d797e4c642c7a1d4b2b91f7ad7b3.jpg" alt="2" class="slide-img"></li>
-                                            <li class="slide"><img src="https://hsto.org/files/ec5/592/f1e/ec5592f1e814401eb38305682a8e88d4.jpg" alt="3" class="slide-img"></li>
-                                            <li class="slide"><img src="https://hsto.org/files/eda/61a/3c5/eda61a3c53db408d820643998d9acd81.jpg" alt="4" class="slide-img"></li>
-                                        </ul>
-                            
-                                        <div id="prev-next-btns">
-                                            <div id="prev-btn"></div>
-                                            <div id="next-btn"></div>
+                            <div class="profile__header header-block">
+                                <div class="header-block__title">Company Profile<span>.</span></div>   
+                                <div class="header-block__subtitle">short introduction</div>
+                            </div>
+                            <!-- слайдбар -->
+                            <div class="profile__slider">
+                                <div class="profile__swiper swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="profile__image-slider swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="image-slider__img swiper-slide">
+                                            <img src="/img/profile/slide/slide1.jpg" alt="slide">
                                         </div>
-                            
-                                        <ul id="nav-btns">
-                                            <li class="slide-nav-btn"></li>
-                                            <li class="slide-nav-btn"></li>
-                                            <li class="slide-nav-btn"></li>
-                                            <li class="slide-nav-btn"></li>
-                                        </ul>
+                                        <div class="image-slider__img swiper-slide">
+                                            <img src="/img/profile/slide/slide2.jpg" alt="slide">
+                                        </div>
+                                        <div class="image-slider__img swiper-slide">
+                                            <img src="/img/profile/slide/slide3.jpg" alt="slide">
+                                        </div>
+                                        <div class="image-slider__img swiper-slide">
+                                            <img src="/img/profile/slide/slide4.jpg" alt="slide">
+                                        </div>
+                                
                                     </div>
-                                </div>    
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <!-- <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div> -->
+                                
+                                    <!-- If we need scrollbar -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
                             </div>
                             <div class="profile__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -86,11 +98,11 @@
             </main>
             <footer class="footer">подвал</footer>
         </div>
-         <!-- подключение  JQUERY -->   
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     
         <!-- подключение js эфектов -->
         <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
         <!-- подключение js эфектов -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
