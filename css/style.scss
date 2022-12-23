@@ -119,7 +119,7 @@ body{
         flex-wrap: wrap;
 
         position: relative;
-        
+    
     }
 
     // .header__logo
@@ -135,22 +135,35 @@ body{
     &__menu {
         display: flex;
         flex: 1 1 auto;
-        align-items: center;
-        justify-content: flex-end;
+        @media (min-width:767px) {
+             align-items: center;
+            justify-content: flex-end;
+        }
+       
         @media (max-width:767px) {
+            justify-content: center;
             position: fixed;
-            top: 0;
+            top: -100%;
             left: 0;
             width: 100%;
-            height: 100%;
-            border-color: #252B42;
+            overflow: auto; 
+             height: 100%;
+            background-color: #6f922d;
+            padding: 140px 0 0 0 ;
+            transition: all 0.3s ease 0s;
         }
     }
-
+    &__menu.active{
+        @media (max-width:767px) {
+            top: 0;
+        }
+    }
 
     // .header__button
 
     &__button {
+        position: relative;
+        z-index: 5;
     }
 }
 
@@ -170,7 +183,11 @@ body{
 
     &__list {
         display: flex;
-        
+        position: relative;
+        z-index: 3;
+        @media (max-width:767px) {
+            display: block;
+        }
     }
 
     // .menu-header__item
@@ -326,7 +343,7 @@ body{
     &__text {
         background: url(../img/profile/stain.svg) center center no-repeat; 
         display: flex;
-        
+        background-size: contain;
         height: 362px;
         
         align-items: center;
@@ -340,6 +357,7 @@ body{
         @media (max-width:1040px) {
             flex: 0 1 611px;
             order:3;
+            text-align: center;
         }
     }
     
