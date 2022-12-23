@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import "slide.css";
+@import "burger.css";
 * {
   padding: 0;
   margin: 0;
@@ -178,7 +179,10 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  z-index: 2;
+}
+.header__logo {
+  position: relative;
+  z-index: 4;
 }
 .header__menu {
   display: flex;
@@ -186,47 +190,14 @@ body {
   align-items: center;
   justify-content: flex-end;
 }
-.header__burger {
-  display: none;
-}
 @media (max-width: 767px) {
-  .header__burger {
-    display: block;
-    position: relative;
-    width: 24px;
-    height: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .header__burger span {
-    position: absolute;
-    background-color: #F79901;
+  .header__menu {
+    position: fixed;
     top: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-  }
-}
-@media (max-width: 767px) {
-  .header__burger:before {
-    content: "";
-    background-color: #F79901;
-    position: absolute;
-    width: 100%;
-    height: 2px;
     left: 0;
-    top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .header__burger:after {
-    content: "";
-    background-color: #F79901;
-    position: absolute;
     width: 100%;
-    height: 2px;
-    left: 0;
-    bottom: 0;
+    height: 100%;
+    border-color: #252B42;
   }
 }
 .header:before {
@@ -237,6 +208,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #4D4D4D;
+  z-index: 3;
 }
 
 .menu-header__list {

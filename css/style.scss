@@ -1,5 +1,6 @@
 @import "nullstyle.scss";
 @import "slide.css";
+@import "burger.css";
 
 $border:1px solid red;
 
@@ -118,12 +119,15 @@ body{
         flex-wrap: wrap;
 
         position: relative;
-        z-index: 2;
+        
     }
 
     // .header__logo
 
     &__logo {
+        position: relative;
+
+        z-index: 4;
     }
 
     // .header__menu
@@ -133,53 +137,17 @@ body{
         flex: 1 1 auto;
         align-items: center;
         justify-content: flex-end;
-        
-    }
-
-    //11min
-    &__burger{
-        display: none;
         @media (max-width:767px) {
-            display: block;
-            position: relative;
-            width: 24px;
-            height: 24px;
-        }
-    }
-    &__burger span{
-        @media (max-width:767px) {
-            position: absolute;
-            background-color: #F79901;
+            position: fixed;
             top: 0;
-            width: 100%;
-            height: 2px;
-            top: 9px;
-        }
-    }
-    &__burger:before{
-        @media (max-width:767px) {
-            content: ""; 
-            background-color: #F79901;
-            position: absolute;
-            width: 100%;
-            height: 2px;
             left: 0;
-
-            top: 0;
+            width: 100%;
+            height: 100%;
+            border-color: #252B42;
         }
     }
-    &__burger:after{
-        @media (max-width:767px) {
-           content: ""; 
-           background-color: #F79901;
-           position: absolute;
-           width: 100%;
-           height: 2px;
-           left: 0;
 
-           bottom: 0;
-        }
-    }
+
     // .header__button
 
     &__button {
@@ -194,6 +162,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #4D4D4D;
+    z-index: 3;
 }
 .menu-header {
 
