@@ -6,6 +6,7 @@
     body.loock{
         overflow: hidden;
         /* запрет скрола во время  открытого бургера */
+        
     }
 
     .header__burger{

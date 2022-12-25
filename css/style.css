@@ -176,17 +176,25 @@ body {
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
   position: relative;
 }
 .header__logo {
   position: relative;
+  flex: 1 1 auto;
+  border: 1px solid red;
   z-index: 4;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8px;
+  }
 }
 .header__menu {
   display: flex;
-  flex: 1 1 auto;
 }
 @media (min-width: 767px) {
   .header__menu {
@@ -216,6 +224,14 @@ body {
 .header__button {
   position: relative;
   z-index: 5;
+  display: flex;
+  border: 1px solid red;
+  right: 15px;
+}
+@media (max-width: 767px) {
+  .header__button {
+    order: 3;
+  }
 }
 
 .header:before {
@@ -225,7 +241,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #4D4D4D;
   z-index: 3;
 }
 
